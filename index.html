@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rahul Kumar - Personal Portfolio Website</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e6b8371d90.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./assets:images:icon.png" alt="logo image" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Android Developer | Frontend Developer</p>
+               
+                <h1>
+                    Hi, I'm <span>Rahul Kumar</span>
+                    </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="about-col-1">
+                    <img src="assets/images/user.png" alt="">
+                </div> -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Rahul Kumar , a Frontend Developer and Android Developer.I love to create beautiful and performant products with delightful user experiences and always ready to learn new technologies, methods , and principle as per the project requirements.  </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br>Build Websites using HTML, CSS , Javascript and React js</li>
+                            <li><span>App Development</span><br>Build apps using Kotlin/Java</li>
+                            <li><span>Backend Development</span><br>PHP, MYSQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Android Developer Intern at Analysed.in<li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>BTech-GEOINFORMATICS from Netaji Subhas University of Technology (New Delhi)
+                        <br> Current CGPA: 7.0</li>
+                            <li><span>2017-2019</span><br>Intermediate from Arcadian Public School Mathura (UP)<br>
+                            Percentage: 78%</li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Developer</h2>
+                    <p>As a Frontend Developer , I am responsible for developing new user-facing features , determining the structure and design of web pages, building reusable codes, optimizing page loading times and using a variety of markup languages to create the web pages.  </p>
+                </div>
+            
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Android Developer</h2>
+                    <p>As a Android Developer, I am responsible for devloping application for android devices and maintainance of application. I maily develop apps for android with the help of Kotlin and Java. I always tried to make robust and maintainable apps.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Works section -->
+    <div id="works">
+    
+        <div class="container">
+            <div class="bg-image"></div>
+            <h1 class="sub-title">My Works</h1>
+            <div class="works-list">
+                <div class="work">
+                    <img src="./assets/work-1.png " alt="work-1" className="h-[250px]">
+                    <div class="layer">
+                        <br/>
+                        <br/>
+                        <br/><h3>Random-Gift</h3>
+                        <p>Skills used : useState, Hooks, API, Javascript and React
+                            Features : 1-Developed a dynamic Random-Gif using React, enabling users to fetch and display random GIFs from a public API.
+                            2-Implemented API integration to seamlessly fetch GIF data, ensuring real-time updates and interactive.
+                            3-Utilized advanced React concepts, including hooks and state management, to create an efficient, responsive interface.
+                        </p>
+                        <a href="https://lucent-melomakarona-f3fd7f.netlify.app/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/work-2.png" alt="work-2">
+                    <div class="layer">
+                        <br/>
+                        <br/>
+                        <h3>Courses-Webpage</h3>
+                        <p>Skills used : Designed and developed a webpage for courses using JavaScript and Tailwind CSS.
+                            Features: 1-Contain  of various categories of Courses like DSA, Web-Development, Programming language.
+                            2-Implemented interactive and responsive UI elements with Tailwind CSS.
+                            3-Utilized JavaScript for dynamic content updates and enhanced user experience.
+                                
+                        </p>
+                        <a href="https://github.com/Rahul9672/Courses-webpage"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/work-3 .png" alt="work-3">
+                    <div class="layer">
+                        <h3>Studynation-Tech-courses</h3>
+                        <p>Skills used: JavaScript, React, and API-Integration
+                            Features: 1-Implements a robust search bar to help users find courses easily.
+                            2-Includes voice search functionality for enhanced user convenience.
+                            3-Displays aggregated ratings to help users make informed decisions.
+                            4-Utilizes Material Design principles to create a visually appealing and intuitive interface.
+
+                        </p>
+                        <a href="https://github.com/Rahul9672/studynation-tech-courses"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./assets/work-4 .png" alt="work-4"
+                    class="w-full">
+                    <div class="layer">
+                        <h3>Razorpay Clone</h3>
+                        <p>Skills used: HTML5, Tailwind CSS, Javascript. 
+                            Features: 
+                            1-Search bar to search for features and services, similar to Razorpay. 
+                            2-Contains details of various payment solutions provided by Razorpay. 
+                            3-Includes interactive UI components using Tailwind CSS. 
+                            4-Responsive design ensuring compatibility across devices.</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Rahul9672" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rahulchaudhary9672@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>+91 9672166603</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rahul-chaudhary-6a128b22a/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://pdf.ac/35mA1F" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©️  Made by <a href="#">Rahul Kumar</a></p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
